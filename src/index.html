@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7" lang="en" manifest="manifest.txt"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8" lang="en" manifest="manifest.txt"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" manifest="manifest.txt"><!--<![endif]-->
+<head>
+    <title>Backgammon</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <link rel="stylesheet" href="css/main.css" />
+
+	<!-- Load Modernizr before page -->
+	<script src="js/modernizr.min.js"></script>
+</head>
+<body>
+
+	<!-- <div> -->
+	<!-- 	<header> -->
+	<!-- 		<h1>Backgammon 2012</h1> -->
+	<!-- 	</header> -->
+	<!-- </div> -->
+
+	<!-- <div class="container"> -->
+	<!-- 	<div class="white_player"> -->
+	<!-- 		<span class="img icon"></span> -->
+	<!-- 		<span>White player</span> -->
+	<!-- 	</div> -->
+
+	<!-- 	<div class="playarea"> -->
+	<!-- 		<canvas id="backgammon" class="playfield" width="619" height="423"> -->
+	<!-- 			<p> -->
+	<!-- 				Unfortunatelly your browser doesn't support the canvas feature. -->
+	<!-- 				Please use one of the following browsers: -->
+	<!-- 				<ul> -->
+	<!-- 					<li>Chrome</li> -->
+	<!-- 					<li>Firefox</li> -->
+	<!-- 					<li>Safari</li> -->
+	<!-- 					<li>Opera</li> -->
+	<!-- 				</ul> -->
+	<!-- 			</p> -->
+	<!-- 		</canvas> -->
+
+	<!-- 		<div class="dice"> -->
+	<!-- 			<div class="inner"> -->
+	<!-- 				<div class="img number d6"></div> -->
+	<!-- 			</div> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+
+	<!-- 	<div class="black_player"> -->
+	<!-- 		<span class="img icon"></span> -->
+	<!-- 		<span>Black player</span> -->
+	<!-- 	</div> -->
+	<!-- </div> -->
+
+
+<table cellpadding="10" cellspacing="10" class="layout">
+	<tr>
+		<td align="right"><img src="images/bg_header.png" alt="Backgammon" /></td>
+		<td class="author"></td>
+	</tr>
+	<tr>
+		<td align="center" id="header_white"><br /><img src="images/bg_user_white.png" alt="" width="16" height="16" /> Vit spelare</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="inout inout_white"><div>Inne: <img src="images/bg_empty.png" height="20" id="whitehome" alt="" /></div><div>F&auml;ngelse: <img src="images/bg_empty.png" height="20" id="whitejail" alt="" /></div></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="field"></td>
+		<td style="width:200px" align="center"><a href="#" id="start_btn" title="Bouml;rja parti"><img src="images/play.png" alt="" /><br />B&ouml;rja parti</a>
+
+		<br /><br /><hr /><br /><br />Spelare: <img src="#" width="16" height="16" alt="" id="drag" /><br /><br /><br />
+
+		<a href="#" id="die_one" title="Välj tärning"><img src="images/bg_dice_0.png" id="die0" alt="" /></a>
+		<a href="#" id="die_two" title="Välj tärning"><img src="images/bg_dice_0.png" id="die1" alt="" /></a>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="inout inout_black"><div>Inne: <img src="images/bg_empty.png" height="20" id="blackhome" alt="" /></div><div>F&auml;ngelse: <img src="images/bg_empty.png" height="20" id="blackjail" alt="" /></div></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td align="center" id="header_black"><img src="images/bg_user_black.png" alt="" width="16" height="16" /> Svart spelare</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-latest.min.js"><\/script>')</script>
+	<script src="js/all.min.js"></script>
+</body>
+</html>
