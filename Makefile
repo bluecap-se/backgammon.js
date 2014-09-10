@@ -41,7 +41,6 @@ js:
 # Minify static HTML
 # pages and copy
 tmpl:
-	cp $(SOURCE_DIR)/humans.txt $(INSTALL_DIR)/
 	# cp $(SOURCE_DIR)/index.html $(INSTALL_DIR)/
 	php -r "print preg_replace('#(?ix)(?>[^\S ]\s*|\s{2,})(?=(?:(?:[^<]++|<(?!/?(?:textarea|pre)\b))*+)(?:<(?>textarea|pre)\b|\z))#', '', join(' ', @file('$(SOURCE_DIR)/index.html')));" > $(INSTALL_DIR)/index.html
 
