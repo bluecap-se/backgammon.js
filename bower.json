@@ -1,0 +1,14 @@
+{
+  "name": "backgammon.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bluecap-se/backgammon.js",
+  "authors": "<hello@bluecap.se>",
+  "license": "MIT",
+  "dependencies": {
+      "jquery": "jquery",
+      "excanvas": "git://github.com/arv/ExplorerCanvas.git",
+      "modernizr": "modernizr",
+      "easeljs": "easeljs",
+      "jrumble": "git://github.com/jackrugile/jrumble.git"
+  }
+}
