@@ -6,9 +6,9 @@
 SOURCE_DIR ?= ./src
 INSTALL_DIR ?= ./build
 
-JS_TARGETS = $(SOURCE_DIR)/js/excanvas.min.js \
-			 $(SOURCE_DIR)/js/easel.min.js \
-			 $(SOURCE_DIR)/js/jrumble.min.js \
+JS_TARGETS = $(SOURCE_DIR)/dependencies/excanvas/excanvas.js \
+			 $(SOURCE_DIR)/dependencies/easeljs/lib/easeljs-0.7.1.min.js \
+			 $(SOURCE_DIR)/dependencies/jrumble/jquery.jrumble.min.js \
 			 $(SOURCE_DIR)/js/backgammon.js \
 			 $(SOURCE_DIR)/js/dice.js \
 			 $(SOURCE_DIR)/js/main.js \
@@ -31,11 +31,14 @@ css:
 # Concat, minify and
 # copy JavaScript files
 js:
+	mkdir -p $(INSTALL_DIR)/js/
+	mkdir -p $(INSTALL_DIR)/dependencies/jquery/
+	mkdir -p $(INSTALL_DIR)/dependencies/modernizr/
 	cat ${JS_TARGETS} > all.tmp.js
-	jsc all.tmp.js > $(INSTALL_DIR)/js/all.min.js
+	uglifyjs all.tmp.js > $(INSTALL_DIR)/js/all.min.js
 	rm all.tmp.js
-	cp $(SOURCE_DIR)/js/jquery-latest.min.js $(INSTALL_DIR)/js/
-	cp $(SOURCE_DIR)/js/modernizr.min.js $(INSTALL_DIR)/js/
+	cp $(SOURCE_DIR)/dependencies/jquery/dist/jquery.min.js $(INSTALL_DIR)/dependencies/jquery/
+	cp $(SOURCE_DIR)/dependencies/modernizr/modernizr.js $(INSTALL_DIR)/dependencies/modernizr/
 
 
 # Minify static HTML
