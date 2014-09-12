@@ -9,6 +9,7 @@
       "excanvas": "git://github.com/arv/ExplorerCanvas.git",
       "modernizr": "modernizr",
       "easeljs": "easeljs",
-      "jrumble": "git://github.com/jackrugile/jrumble.git"
+      "jrumble": "git://github.com/jackrugile/jrumble.git",
+      "normalize.css": "normalize.css"
   }
 }

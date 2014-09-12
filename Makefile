@@ -22,7 +22,7 @@ all: tmpl css js
 # Concat, parse, minify
 # and copy CSS files
 css:
-	test -d $(INSTALL_DIR)/css/ || mkdir -p $(INSTALL_DIR)/css/
+	mkdir -p $(INSTALL_DIR)/css/
 	lessc -x $(SOURCE_DIR)/css/main.less > $(INSTALL_DIR)/css/main.css
 	#test -d $(INSTALL_DIR)/css/fonts/ || mkdir -p $(INSTALL_DIR)/css/fonts/
 	#cp -R $(SOURCE_DIR)/css/fonts/* $(INSTALL_DIR)/css/fonts/
