@@ -14,24 +14,24 @@
 	_config.messages = {
 						"choose_dice_first" : {
 							"en" : "Please choose a dice first",
-							"sv" : "Välj en tärning först",
+							"sv" : "Välj en tärning först"
 						},
 						"no_pawn_there" : {
 							"en" : "You have no pawn there",
-							"sv" : "Du har inga pjäser där",
+							"sv" : "Du har inga pjäser där"
 						},
 						"used_dice" : {
 							"en" : "You have already used that dice",
-							"sv" : "Du har redan använt tärningen",
+							"sv" : "Du har redan använt tärningen"
 						},
 						"cant_move" : {
 							"en" : "You can't move there",
-							"sv" : "Otillåten flytt",
+							"sv" : "Otillåten flytt"
 						},
 						"not_all_home" : {
 							"en" : "You don't have all your pawns home\nto more here",
-							"sv" : "Du har inte alla dina pjäser\nhemma för att flytta hit",
-						},
+							"sv" : "Du har inte alla dina pjäser\nhemma för att flytta hit"
+						}
 					};
 
 
