@@ -10,7 +10,7 @@ The board game backgammon, now in your browser.
 ### Using a package manager
 
 ```console
-$ bower install backgammon.js
+$ npm install backgammon.js
 ```
 
 ### From source
